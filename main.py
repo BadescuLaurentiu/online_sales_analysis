@@ -15,3 +15,5 @@ def main():
     
     total_value = manager.total_inventory_value()
     print(f"Total Inventory Value: {total_value: .2f}$")
+    
+    manager.remove_product_by_name("Mouse")
