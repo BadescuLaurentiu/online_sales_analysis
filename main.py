@@ -18,18 +18,3 @@ def main():
     print(f"Total Inventory Value: {total_value: .2f}$")
     
     manager.remove_product_by_name("Mouse")
-    
-    cart = Cart()
-    
-    selected_products = random.sample(manager.products, 3)
-    
-    for product in selected_products:
-        quantity = random.randint(1, 3)
-        cart.add_to_cart(product, quantity)
-        
-    cart.display_cart()
-    total_value = cart.calculate_total()
-    print(f"Total value of cart: {total_value: .2f}$")
-    
-if __name__ == "__main__":
-    main()
